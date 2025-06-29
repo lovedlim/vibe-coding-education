@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe 코딩 교육 - 퇴근후딴짓과 함께하는 프로그래밍 여행</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>Vibe</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#courses">강의</a></li>
+                    <li><a href="#contact">문의</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">퇴근후딴짓</span>과 함께하는<br>
+                    <span class="typing-text">코딩 여행</span>
+                </h1>
+                <p class="hero-description">
+                    일상의 루틴을 벗어나 새로운 가능성을 발견하세요.<br>
+                    초보자부터 전문가까지, 모두를 위한 맞춤형 코딩 교육을 제공합니다.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('courses')">
+                        <i class="fas fa-play"></i>
+                        강의 시작하기
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        <i class="fas fa-info-circle"></i>
+                        자세히 알아보기
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-animation">
+                    <div class="code-lines">
+                        <div class="code-line">function <span class="keyword">learnCoding</span>() {</div>
+                        <div class="code-line">  const <span class="variable">passion</span> = true;</div>
+                        <div class="code-line">  const <span class="variable">dedication</span> = 100;</div>
+                        <div class="code-line">  return <span class="string">'Success!'</span>;</div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>왜 Vibe 코딩 교육인가요?</h2>
+                <p>퇴근후딴짓이 직접 설계한 체계적이고 실용적인 커리큘럼</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>개인 맞춤형 학습</h3>
+                    <p>각자의 수준과 목표에 맞는 개별화된 학습 경로를 제공합니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>실무 중심 프로젝트</h3>
+                    <p>이론뿐만 아니라 실제 프로젝트를 통해 실무 경험을 쌓을 수 있습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>커뮤니티 지원</h3>
+                    <p>동료 학습자들과 함께 성장하는 활발한 커뮤니티를 운영합니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>유연한 학습 시간</h3>
+                    <p>바쁜 일상 속에서도 자신의 페이스에 맞춰 학습할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>강의 과정</h2>
+                <p>단계별로 체계적으로 구성된 코딩 교육 과정</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>웹 개발 기초</h3>
+                        <div class="course-level">초급</div>
+                    </div>
+                    <div class="course-content">
+                        <p>HTML, CSS, JavaScript의 기초를 탄탄히 다지는 과정</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> HTML5 구조 설계</li>
+                            <li><i class="fas fa-check"></i> CSS3 스타일링</li>
+                            <li><i class="fas fa-check"></i> JavaScript 기초 문법</li>
+                            <li><i class="fas fa-check"></i> 반응형 웹 디자인</li>
+                        </ul>
+                        <div class="course-duration">
+                            <i class="fas fa-clock"></i>
+                            8주 과정
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card featured">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React 개발</h3>
+                        <div class="course-level">중급</div>
+                        <div class="popular-badge">인기</div>
+                    </div>
+                    <div class="course-content">
+                        <p>현대적인 웹 애플리케이션 개발을 위한 React 마스터</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> React 컴포넌트 설계</li>
+                            <li><i class="fas fa-check"></i> 상태 관리 (Redux, Context)</li>
+                            <li><i class="fas fa-check"></i> 라우팅 및 네비게이션</li>
+                            <li><i class="fas fa-check"></i> 실전 프로젝트 구현</li>
+                        </ul>
+                        <div class="course-duration">
+                            <i class="fas fa-clock"></i>
+                            12주 과정
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>백엔드 개발</h3>
+                        <div class="course-level">고급</div>
+                    </div>
+                    <div class="course-content">
+                        <p>Node.js와 데이터베이스를 활용한 서버 개발</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Node.js 서버 구축</li>
+                            <li><i class="fas fa-check"></i> REST API 설계</li>
+                            <li><i class="fas fa-check"></i> 데이터베이스 연동</li>
+                            <li><i class="fas fa-check"></i> 배포 및 운영</li>
+                        </ul>
+                        <div class="course-duration">
+                            <i class="fas fa-clock"></i>
+                            10주 과정
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">수강생</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">완료 프로젝트</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">만족도 (%)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">개월 운영</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>문의하기</h2>
+                <p>궁금한 점이 있으시면 언제든 연락주세요!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>이메일</h3>
+                            <p>vibe.coding@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>디스코드</h3>
+                            <p>퇴근후딴짓#1234</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>깃허브</h3>
+                            <p>github.com/vibe-coding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="이름" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="이메일" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="메시지" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            메시지 보내기
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-code"></i>
+                        <span>Vibe</span>
+                    </div>
+                    <p>퇴근후딴짓과 함께하는 코딩 여행</p>
+                </div>
+                <div class="footer-section">
+                    <h3>빠른 링크</h3>
+                    <ul>
+                        <li><a href="#home">홈</a></li>
+                        <li><a href="#about">소개</a></li>
+                        <li><a href="#courses">강의</a></li>
+                        <li><a href="#contact">문의</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>소셜 미디어</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vibe 코딩 교육. All rights reserved. Created by 퇴근후딴짓</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
